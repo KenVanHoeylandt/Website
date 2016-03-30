@@ -1,124 +1,104 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<link href="font-awesome.min.css" rel="stylesheet" />
-<style>
-	.centered {
-		position: absolute;
-		top: 0;
-		bottom: 0;
-		left: 0;
-		right: 0;
-		margin: auto;
-	}
+<!DOCTYPE HTML>
+<!--
+	Identity by HTML5 UP
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Ken Van Hoeylandt</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<script>
+		document.addEventListener("DOMContentLoaded", function() { 
+			var e = document.getElementById('e');
+			e.href = 'm' + 'a' + 'ilto' + ':publicma' + 'il' + '@' + 'kenvanhoeylandt' + '.' + 'net';
+		});
+		</script>
+	</head>
+	<body class="is-loading">
 
-	.container {
-		width: 300px;
-		height: 300px;
-	}
+		<!-- Wrapper -->
+			<div id="wrapper">
 
-	.circle {
-		border: 3px solid #0099ff;
-		color:transparent;
-		border-radius: 1000px;
-		position: absolute;
-	}
+				<!-- Main -->
+					<section id="main">
+						<header>
+							<span class="avatar"><img src="images/avatar.jpg" alt="" /></span>
+							<h1>Ken Van Hoeylandt</h1>
+							<p>Software Engineer</p>
+						</header>
+						<!--
+						<hr />
+						<h2>Extra Stuff!</h2>
+						<form method="post" action="#">
+							<div class="field">
+								<input type="text" name="name" id="name" placeholder="Name" />
+							</div>
+							<div class="field">
+								<input type="email" name="email" id="email" placeholder="Email" />
+							</div>
+							<div class="field">
+								<div class="select-wrapper">
+									<select name="department" id="department">
+										<option value="">Department</option>
+										<option value="sales">Sales</option>
+										<option value="tech">Tech Support</option>
+										<option value="null">/dev/null</option>
+									</select>
+								</div>
+							</div>
+							<div class="field">
+								<textarea name="message" id="message" placeholder="Message" rows="4"></textarea>
+							</div>
+							<div class="field">
+								<input type="checkbox" id="human" name="human" /><label for="human">I'm a human</label>
+							</div>
+							<div class="field">
+								<label>But are you a robot?</label>
+								<input type="radio" id="robot_yes" name="robot" /><label for="robot_yes">Yes</label>
+								<input type="radio" id="robot_no" name="robot" /><label for="robot_no">No</label>
+							</div>
+							<ul class="actions">
+								<li><a href="#" class="button">Get Started</a></li>
+							</ul>
+						</form>
+						<hr />
+						-->
+						<footer>
+							<ul class="icons">
+								<li><a class="icon fa-envelope-o" id="e"><span class="label">Email</span></a></li>
+								<li><a class="icon fa-skype" href="skype:ken.van.hoeylandt?add"><span class="label">Skype</span></a></li>
+								<li><a class="icon fa-stack-overflow" href="http://stackoverflow.com/users/3848666/ken-van-hoeylandt" target="_blank"><span class="label">StackOverflow</span></a></li>
+								<li><a class="icon fa-github" href="https://github.com/KenVanHoeylandt" target="_blank"><span class="label">Github</span></a></li>
+								<li><a class="icon fa-bitbucket"href="https://bitbucket.org/kenvanhoeylandt/" target="_blank"><span class="label">BitBucket</span></a></li>
+							</ul>
+						</footer>
+					</section>
 
-	.circle_one {
-		width: 160px;
-		height: 160px;
-		border: 8px solid #eee;
-		-webkit-transform: scale3d(0.22,0.22,1);
-		-webkit-transition: all 0.7s; 
-		-webkit-transition-delay: 0.2s;
-	}
+				<!-- Footer -->
+					<footer id="footer">
+						<ul class="copyright">
+							<li>&copy; Ken Van Hoeylandt</li>
+							<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+						</ul>
+					</footer>
 
-	.circle_two {
-		width: 175px;
-		height: 175px;
-		border: 10px solid #ddd;
-		-webkit-transform: scale3d(0.21,0.21,1);
-		-webkit-transition: all 0.7s; 
-		-webkit-transition-delay: 0.1s;
-	}
+			</div>
 
-	.circle_three {
-		width: 190px;
-		height: 190px;
-		border: 8px solid #ccc;
-		-webkit-transform: scale3d(0.2,0.2,1);
-		-webkit-transition: all 0.7s; 
-	}
+		<!-- Scripts -->
+			<!--[if lte IE 8]><script src="assets/js/respond.min.js"></script><![endif]-->
+			<script>
+				if ('addEventListener' in window) {
+					window.addEventListener('load', function() { document.body.className = document.body.className.replace(/\bis-loading\b/, ''); });
+					document.body.className += (navigator.userAgent.match(/(MSIE|rv:11\.0)/) ? ' is-ie' : '');
+				}
+			</script>
 
-	.container:hover div {
-		-webkit-transform: scale3d(1,1,1);
-	}
-
-	.logo {
-		width: 200px;
-		height: 200px;
-		font-size: 80pt;
-		line-height: 200px;
-		color: #bbb;
-		text-align: center;
-		-webkit-transform: scale3d(0.2,0.2,1);
-		-webkit-transition: all 0.7s; 
-	}
-
-	.container:hover div.logo {
-		opacity: 0;
-		-webkit-transition-delay: 0.1s;
-	}
-
-	.envelope {
-		width: 300px;
-		height: 300px;
-		font-size: 60pt;
-		line-height: 300px;
-		text-align: center;
-		opacity: 0;
-		color: #bbb;
-		-webkit-transform: scale3d(0.2,0.2,1);
-		-webkit-transition: all 0.7s; 
-		-webkit-transition-delay: 0.3s;
-	}
-
-	.envelope a:link, .envelope a:visited, .envelope a:active {
-		color: #bbb;
-	}
-
-	.container:hover div.envelope {
-		opacity: 1;
-	}
-
-</style>
-</head>
-
-<body onload="onLoad();">
-
-<script>
-function onLoad()
-{
-	var e = document.getElementById('e');
-	e.href = 'm' + 'a' + 'ilto' + ':publicma' + 'il' + '@' + 'kenvanhoeylandt' + '.' + 'net';
-}
-</script>
-
-<div class="centered container">
-	<div class="centered circle circle_one"></div>
-	<div class="centered circle circle_two"></div>
-	<div class="centered circle circle_three"></div>
-	<div class="centered logo">
-		<div class="fa fa-question"></div>
-	</div>
-	<div class="centered envelope">
-		<a id="e">
-			<div class="fa fa-envelope-o"></div>
-		</a>
-	</div>
-	
-</div>
-
-</body>
-
+	</body>
 </html>
